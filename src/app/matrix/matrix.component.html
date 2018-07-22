@@ -1,0 +1,25 @@
+<h1 *ngIf="state == 1" (click)="playAgain()">RESTART GAME</h1>
+
+
+
+<mat-form-field *ngIf="insert == 0">
+        <input matInput [formControl]="nameControl" type="text" placeholder="Type your name and start playing">
+</mat-form-field>
+<span *ngIf="error == 1" >Name is required.</span>
+
+
+
+<table table align="center">
+    <tr *ngFor="let x of matrix; let i=index">
+      <td *ngFor="let y of x; let j=index" >
+          <div (click)="playerClicked(i,j)">
+              <app-cell imageSource="/assets/{{y}}.jpg"></app-cell>   
+          </div>
+      </td>
+  </tr>
+</table>
+
+
+
+
+

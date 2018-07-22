@@ -1,0 +1,41 @@
+div{
+  width: 200px;
+  height: 200px;
+  background-color:gray;
+}
+
+
+h1{
+    color: green;
+    text-shadow: 10px 5px 5px gray;
+}
+
+mat-form-field, button {
+    width: 400px;
+    font-size: x-large;
+    color: dodgerblue;
+}
+
+span {
+    color: red;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    animation:RoundCycle 4s linear infinite;
+
+}
+
+/* .element {
+    animation:RoundCycle 4s linear infinite;
+} */
+
+
+@keyframes RoundCycle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+

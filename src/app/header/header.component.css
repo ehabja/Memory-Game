@@ -1,0 +1,16 @@
+h1 {
+    margin: 0px;
+    color: green;
+}
+
+nav {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    font-size: xx-large;
+}
+
+/* .active-link {
+    background-color: green;
+    color: rgb(255, 0, 149);
+} */

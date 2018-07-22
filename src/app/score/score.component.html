@@ -1,0 +1,15 @@
+<table border="50" table align="center">
+    <tr>     
+        <th>Player Name</th>
+        <th>Start Time</th>
+        <th>Duration Time</th>
+        <th>Steps</th>
+    </tr>
+    <tr *ngFor="let g of game">
+        <td>{{g.name}}</td>
+        <td>{{g.startTime | date: 'dd/MM/yy HH:mm'}}</td>
+        <td>{{g.duration}} Seconds</td>
+        <td>{{g.steps}}</td>
+        
+    </tr>
+</table>
